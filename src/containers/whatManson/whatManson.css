@@ -1,0 +1,173 @@
+.whatManson {
+  display: flex;
+  flex-direction: column;
+  font-family: Orbitron;
+  border-radius: 40px;
+  padding: 2rem;
+  background: var(--color-footer);
+  letter-spacing: 1px;
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.whatManson-feature {
+  display: flex;
+  letter-spacing: 1px;
+}
+.whatManson-feature .whatManson-container text {
+  font-family: play !important;
+}
+
+/* Customizing feature component as per needs */
+.whatManson-feature .features-container__feature {
+  margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.whatManson-feature .features-container_feature-text {
+  max-width: 700px;
+}
+
+.whatManson-heading {
+  display: block;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
+
+.whatManson-heading h1 {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: var(--font-family);
+  width: 100%;
+}
+
+.whatManson-heading p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+  cursor: pointer;
+  align-items: center;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: white;
+}
+
+.whatManson-container {
+  display: block;
+  flex-wrap: wrap;
+  flex-direction: column;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+.whatManson-container video {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+/* Customizing feature component as per needs */
+.whatManson-container .features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: row;
+}
+
+.whatManson-container .features-container__feature title {
+  letter-spacing: 5px;
+}
+
+/* Customizing feature component as per needs */
+.whatManson-container .features-container_feature-text {
+  margin-top: 0.5rem;
+  font-family: play;
+}
+
+@media screen and (max-width: 850px) {
+  .whatManson-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .whatManson-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .whatManson-feature .features-container__feature {
+    flex-direction: column;
+    text-align: justify;
+    text-justify: distribute;
+  }
+
+  /* Customizing feature component as per needs */
+  .whatManson-feature .features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+
+  .whatManson-heading h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .whatManson-container .features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+    text-align: justify;
+    text-justify: distribute;
+  }
+}
